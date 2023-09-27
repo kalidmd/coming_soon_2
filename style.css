@@ -9,14 +9,6 @@ body {
     align-items: center;
     font-family: 'Maven Pro', sans-serif;
 }
-:root {
-    color-scheme: dark light;
-}
-/* @media (prefers-color-scheme: dark) {
-    main {
-        background-color: red;
-    }
-} */
 .main {
     width: 70%;
     margin: 0 auto;

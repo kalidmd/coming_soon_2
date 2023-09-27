@@ -12,6 +12,7 @@ body {
 .main {
     width: 70%;
     margin: 0 auto;
+    background-color: #fff;
     text-align: center;
     border-radius: 14px;
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%)
@@ -179,5 +180,11 @@ My Phone 412 * 780 */
     }
     .copyright {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .main {
+        width: 90%;
     }
 }

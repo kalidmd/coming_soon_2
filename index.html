@@ -3,248 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/resources/images/favicon-circle.png" type="image/png">
+    <link rel="stylesheet" href="style.css?version=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Center</title>
+    <title>Turth By Will</title>
 </head>
 <body>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            font-family: 'Maven Pro', sans-serif;
-        }
-        .main {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-            border-radius: 14px;
-            box-shadow: 0 5px 25px rgb(1 1 1 / 20%)
-        }
-        .main--head {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 0 auto 27px;
-        }
-        .main--head h1 {
-            font-size: 7vw;
-            font-weight: 800;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px;
-            margin-bottom: 2px;
-        }
-                /* ANIMATED LOGO CIRCLE */
-        .logo-container {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: #fff;
-            overflow: hidden;
-            margin: 5px 0;
-        }
-        .logo-container::before {
-            content: '';
-            position: absolute;
-            inset: -2px 39px;
-            background: linear-gradient(315deg, #1881ff, rgb(241, 153, 70));
-            animation: animate 4s ease infinite;
-            -webkit-animation: animate 4s ease infinite;
-        }
-        .logo-container::after {
-            content: '';
-            position: absolute;
-            inset: 3px;
-            background: #fff;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        .logo-content {
-            position: absolute;
-            inset: 5px;
-            border: 2px solid #000;
-            border-radius: 50%;
-            z-index: 3;
-            overflow: hidden;
-        }
-        .logo-content img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            pointer-events: none;
-        }
-        @keyframes animate {
-            0% {
-                transform: rotate(0deg);
-                -webkit-transform: rotate(0deg)
-            }
-            100% {
-                transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-            }
-        }
-        .stay {
-            font-style: italic;
-            text-align: center;
-            color:  #1881ff;
-            font-weight: 500;
-        }
-        .tuned {
-            font-style: normal;
-            color: rgb(241, 153, 70);
-            font-weight: 700;
-        }
-        .footer {
-            display: flex;
-            flex-direction: column;
-            background-color: #f7f7f7;
-            padding-top: 10px;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-        }
-        .social {
-            display: flex;
-            display: -webkit-flex;
-            width: 150px;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .social--icon {
-            width: 28px;
-        }
-        .location {
-            width: 99%;
-            margin: 23px 0;
-        }
-        .location--icon {
-            width: 20px;
-            transform: translateY(5px);
-        }
-        .contact {
-            width: 100%;
-        }
-        .contact-info {
-            padding-bottom: 5px;
-        }
-        .contact--label {
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-        .contact--icon {
-            width: 12px;
-        }
-        .copyright {
-            margin: 10px 0;
-            font-weight: 700;
-        }
-
-        /* 320px — 480px: Mobile devices
-        481px — 768px: iPads, Tablets
-        769px — 1024px: Small screens, laptops
-        1025px — 1200px: Desktops, large screens
-        1201px and more —  Extra large screens, TV
-        My PC 1536 * 834
-      	My Phone 412 * 780 */
-
-        @media screen and (min-width: 300px) and (max-width: 320px) {
-            body {
-                background-color: green;
-            }
-            .stay {
-                font-size: 10px;
-            }
-            .social {
-                width: 125px;
-            }
-            .social--icon {
-                width: 23px;
-            }
-            .location {
-                margin: 12px 0;
-            }
-            .location--text {
-                font-size: 12px;
-            }
-            .location--icon {
-                width: 15px;
-            }
-            .contact--label {
-                font-size: 14px;
-            }
-            .contact-info {
-                font-size: 13px;
-            }
-            .copyright {
-                font-size: 12px;
-            }
-        }
-
-    </style>
-        <div class="main">
-            <header class="main--head">
-                <div class="logo-container">
-                    <div class="logo-content">
-                        <img class="logo" src="resources/images/tbw-logo.png" alt="logo">
-                    </div>
+    <div class="main">
+        <header class="main--head">
+            <div class="logo-container">
+                <div class="logo-content">
+                    <img class="logo" src="resources/images/tbw-logo.png" alt="logo">
                 </div>
-                <h1>Comming Soon</h1>
-                <p class="stay">Subscribe to our channels below to stay <span class="tuned">TUNED.</span></p>
-            </header>
+            </div>
+            <h1>Comming Soon</h1>
+            <p class="stay">Subscribe to our channels below to stay <span class="tuned">TUNED.</span></p>
+        </header>
 
-            <footer class="footer">
-                <div class="social-container">    
-                    <div class="social">
-                        <a target="_blank" href="https://www.youtube.com/@truthByWill">
-                            <img class="social--icon" src="resources/images/youtube.png" alt="youtube">
-                        </a>
-            
-                        <a target="_blank" href="https://www.facebook.com/truthByWill">
-                            <img class="social--icon" src="resources/images/facebook.png" alt="facebook">
-                        </a>
-            
-                        <a target="_blank" href="https://www.tiktok.com/@truth_bywill">
-                            <img class="social--icon" src="resources/images/tiktok.png" alt="tiktok">
-                        </a>
-            
-                        <a target="_blank" href="https://t.me/truthByWill_yt">
-                            <img class="social--icon" src="resources/images/telegram.png" alt="telegram">
-                        </a>
-                    </div>
-            
-                    <div class="location">
-                        <img class="location--icon" src="resources/images/location.gif" alt="location">
-                        <span class="location--text">Hayat Hospital To Bole Brass Road, TGL Biulding, 4th Floor</span>
-                    </div>      
+        <footer class="footer">
+            <div class="social-container">    
+                <div class="social">
+                    <a target="_blank" href="https://www.youtube.com/@truthByWill">
+                        <img class="social--icon" src="resources/images/youtube.png" alt="youtube">
+                    </a>
+        
+                    <a target="_blank" href="https://www.facebook.com/truthByWill">
+                        <img class="social--icon" src="resources/images/facebook.png" alt="facebook">
+                    </a>
+        
+                    <a target="_blank" href="https://www.tiktok.com/@truth_bywill">
+                        <img class="social--icon" src="resources/images/tiktok.png" alt="tiktok">
+                    </a>
+        
+                    <a target="_blank" href="https://t.me/truthByWill_yt">
+                        <img class="social--icon" src="resources/images/telegram.png" alt="telegram">
+                    </a>
                 </div>
         
-                <div class="contact-container">
-                    <div class="contact">
-                        <p class="contact--label">CONTACT US</p>
-                        <div class="contact-info">
-                            <img class="contact--icon" src="resources/images/email.png" alt="email">
-                            <span class="contact--text">info@truthbywill.com</span>
-                        </div>
-                        <div class="contact-info">
-                            <img class="contact--icon" src="resources/images/phone.png" alt="phone">
-                            <span class="contact--text">+2519 11 75 30 88 | +2517 03 93 81 11</span>
-                        </div>
+                <div class="location">
+                    <img class="location--icon" src="resources/images/location.png" alt="location">
+                    <span class="location--text">Hayat Hospital To Bole Brass Road, TGL Biulding, 4th Floor</span>
+                </div>      
+            </div>
+    
+            <div class="contact-container">
+                <div class="contact">
+                    <p class="contact--label">CONTACT US</p>
+                    <div class="contact-info">
+                        <img class="contact--icon" src="resources/images/email.png" alt="email">
+                        <span class="contact--text">info@truthbywill.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <img class="contact--icon" src="resources/images/phone.png" alt="phone">
+                        <span class="contact--text">+2519 11 75 30 88 | +2517 03 93 81 11</span>
                     </div>
                 </div>
-                <p class="copyright"> ©️ Truth By Will | All Rights Reserved.</p>
-            </footer>
-        </div>
+            </div>
+            <p class="copyright"> ©️ Truth By Will | All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>

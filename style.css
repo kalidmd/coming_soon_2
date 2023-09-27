@@ -9,10 +9,18 @@ body {
     align-items: center;
     font-family: 'Maven Pro', sans-serif;
 }
+:root {
+    color-scheme: dark light;
+}
+/* @media (prefers-color-scheme: dark) {
+    main {
+        background-color: red;
+    }
+} */
 .main {
     width: 70%;
     margin: 0 auto;
-    background-color: #fff;
+    /* background-color: #fff; */
     text-align: center;
     border-radius: 14px;
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%)
@@ -98,7 +106,7 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background-color: #fdf8f8;
     padding-top: 10px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
